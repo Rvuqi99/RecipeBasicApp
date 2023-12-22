@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "597752324976",
+    "project_id": "recipeapp-ffd56",
+    "storage_bucket": "recipeapp-ffd56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597752324976:android:816f116ce68c1e1c02a5b5",
+        "android_client_info": {
+          "package_name": "my.tutorials.recipeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKvMackqy9jkItokIAsVJ2d5ygLOMaOi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

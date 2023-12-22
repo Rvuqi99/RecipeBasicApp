@@ -1,0 +1,13 @@
+<?xml version = "1.0"?>
+<records>
+    <!-- default recipe type -->
+    <type id="1" name="All" type="all" />
+    <type id="2" name="Foods" type="food"/>
+    <type id="3" name="Beverages" type="beverage"/>
+
+    <!-- default recipe -->
+    <recipe id="1" type="food" name="Fried Egg" ingredients="Oil, Egg" steps="First, heat the pan. After the pan is hot enough, pour 50ml of oil inside the hot pan. When the oil is hot, put inside the egg in the oil. After 3 minutes, the egg will cooked enough. Turn off the gas and the fried egg is ready" image="android.resource://my.tutorials.recipeapp/2131165340"/>
+    <recipe id="2" type="food" name="Fried Chicken" ingredients="Oil, Chicken" steps="First, heat the pan. After the pan is hot enough, pour 100ml of oil inside the hot pan. When the oil is hot, put inside the chicken in the oil. After 20 minutes, the chicken will cooked enough. Turn off the gas and the fried chicken is ready" image="android.resource://my.tutorials.recipeapp/2131165339"/>
+    <recipe id="3" type="beverage" name="Hot Tea" ingredients="Water, Teabag" steps="First, boil the water. Put the teabag inside a cup. After the water is boiled, pour 30ml of the hot water inside the cup. Stir well the tea and after 30 seconds your tea will be ready" image="android.resource://my.tutorials.recipeapp/2131165344"/>
+    <recipe id="4" type="beverage" name="Hot Coffee" ingredients="Water, Coffee Powder" steps="First, boil the water. Put 2 spoons of coffee powder inside a cup. After the water is boiled, pour 30ml of the hot water inside the cup. Stir well the coffee and done" image="android.resource://my.tutorials.recipeapp/2131165343"/>
+</records>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="@color/lightBlue">
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_sel_types"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recipe types:"
+                    android:textSize = "20dp"
+                    android:textColor="@color/black"/>
+                <Spinner
+                    android:id="@+id/types_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="46dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                >
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Recipe"/>
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

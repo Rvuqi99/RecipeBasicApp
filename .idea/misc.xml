@@ -1,0 +1,19 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_update.xml" value="0.1735" />
+        <entry key="app/src/main/res/layout/activity_add_edit_recipe.xml" value="0.24020233154296883" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23253173828124996" />
+        <entry key="app/src/main/res/layout/realm_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/recipe_view_holder.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

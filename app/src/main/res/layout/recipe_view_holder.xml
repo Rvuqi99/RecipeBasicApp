@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp"
+    app:cardBackgroundColor="#2196F3"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
+            android:background="#ffffff"
+            app:srcCompat="@drawable/empty_image" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/btn_info"
+            android:layout_toEndOf="@+id/iv_image"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textColor="#B3FFFFFF" />
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView-->
+            <!--                android:id="@+id/tv_ingredients"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Ingredients"-->
+            <!--                android:textColor="#B3FFFFFF"/>-->
+
+            <!--            <androidx.appcompat.widget.AppCompatTextView-->
+            <!--                android:id="@+id/tv_steps"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Steps"-->
+            <!--                android:textColor="#B3FFFFFF"/>-->
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_info"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_update"
+            app:tint="#fff"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
