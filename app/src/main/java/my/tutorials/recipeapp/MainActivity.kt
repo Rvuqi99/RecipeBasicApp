@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity(){
             event = parser.next()
         }
 
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, typeList)
+        val adapter = ArrayAdapter(this, R.layout.tv_spinner, typeList)
         spinner.adapter = adapter
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {

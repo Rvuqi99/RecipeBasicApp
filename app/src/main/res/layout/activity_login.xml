@@ -33,22 +33,25 @@
                 android:id="@+id/et_email"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:hint="   Email"
+                android:hint="Email"
                 android:minHeight="42dp"
                 android:background="@color/white"
                 android:inputType="textEmailAddress"
-                />
+                android:padding="10dp"/>
             <EditText
                 android:id="@+id/et_password"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:hint="   Password"
+                android:hint="Password"
                 android:minHeight="42dp"
                 android:layout_marginTop="20dp"
                 android:background="@color/white"
                 android:inputType="textPassword"
                 android:drawableEnd="@drawable/ic_visibility"
                 android:paddingEnd="5dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 />
             <Button
                 android:id="@+id/btn_login"

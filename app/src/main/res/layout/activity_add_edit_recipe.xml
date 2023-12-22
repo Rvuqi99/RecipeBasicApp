@@ -74,9 +74,10 @@
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="  Enter Name"
+                    android:hint="Enter Name"
                     android:minHeight="42dp"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:padding="10dp"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -99,9 +100,10 @@
                     android:id="@+id/et_ingredients"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="  Enter Ingredients"
+                    android:hint="Enter Ingredients"
                     android:minHeight="42dp"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:padding="10dp"/>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -124,9 +126,10 @@
                     android:id="@+id/et_steps"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="  Enter Steps"
+                    android:hint="Enter Steps"
                     android:minHeight="42dp"
-                    android:background="@color/white"/>
+                    android:background="@color/white"
+                    android:padding="10dp"/>
             </androidx.appcompat.widget.LinearLayoutCompat>
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
