@@ -86,8 +86,7 @@ class AddEditRecipe : AppCompatActivity(){
         }
 
         btnBack.setOnClickListener {
-            val i = Intent(this, MainActivity::class.java)
-            startActivity(i)
+            finish()
         }
     }
 
@@ -95,10 +94,7 @@ class AddEditRecipe : AppCompatActivity(){
         super.onActivityResult(requestCode, resultCode, data)
         if(requestCode == IMAGE_REQUEST_CODE && resultCode == RESULT_OK){
             imageUri = data?.data!!
-            //val uri : Uri = Uri.parse("android.resource://my.tutorials.recipeapp/" + R.drawable.fried_chicken_image)
-            //Log.d("uri", uri.toString() + "," + uri1.toString() + "," + uri2.toString())
             Picasso.get().load(imageUri).resize(200,200).centerCrop().into(image)
-
             uploadImage(imageUri)
         } else {
             Toast.makeText(this, "No image selected", Toast.LENGTH_LONG).show()
@@ -176,7 +172,6 @@ class AddEditRecipe : AppCompatActivity(){
                 val rcp = RecipesModel(id = id, type = type, name = name, ingredients = ingredients, steps = steps, image = image)
                 val status = sqLiteHelper.updateRecipe(rcp)
 
-                Log.d("save", status.toString())
                 if(status > -1){
                     val i = Intent(this, MainActivity::class.java)
                     startActivity(i)
@@ -188,7 +183,7 @@ class AddEditRecipe : AppCompatActivity(){
                 val rcp = RecipesModel(id = id, type = type, name = name, ingredients = ingredients, steps = steps, image = image)
                 val status = sqLiteHelper.insertRecipe(rcp)
 
-                Log.d("save", status.toString())
+
                 if(status > -1){
                     val i = Intent(this, MainActivity::class.java)
                     startActivity(i)
@@ -248,7 +243,7 @@ class AddEditRecipe : AppCompatActivity(){
     }
 
     override fun onBackPressed() {
-        val nothing = true
+        val nothing = false
         if(nothing){
             super.onBackPressed()
         }

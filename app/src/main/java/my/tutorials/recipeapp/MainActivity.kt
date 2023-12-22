@@ -64,6 +64,10 @@ class MainActivity : AppCompatActivity(){
         }
     }
 
+    override fun onResume(){
+        super.onResume()
+    }
+
     private fun readXmlFile() {
         val xml_data = assets.open("recipetypes.xml")
         val factory = XmlPullParserFactory.newInstance()
@@ -161,7 +165,7 @@ class MainActivity : AppCompatActivity(){
     }
 
     override fun onBackPressed() {
-        val nothing = true
+        val nothing = false
         if(nothing){
             super.onBackPressed()
         }

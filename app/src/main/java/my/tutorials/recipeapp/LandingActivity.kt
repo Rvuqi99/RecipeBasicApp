@@ -29,6 +29,6 @@ class LandingActivity : AppCompatActivity(){
                 val i = Intent(this, LoginActivity::class.java)
                 startActivity(i)
             }
-        }, 5000)
+        }, 3000)
     }
 }
